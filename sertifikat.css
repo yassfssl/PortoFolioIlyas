@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vertically center the carousel */
+    margin: 0;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.carousel {
+    position: relative;
+    padding-top: 7.5rem;
+    width: 80%; /* Set the width of the carousel */
+    max-width: 800px; /* Maximum width */
+    height: 800px; /* Increased height of the carousel */
+    overflow: hidden;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%; /* Each slide takes full width */
+    position: relative;
+}
+
+.carousel-slide img {
+    object-fit: contain; /* Ensure the image is contained without being cut off */
+    width: 100%;
+    height: 100%; /* Set height to fill the carousel */
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
