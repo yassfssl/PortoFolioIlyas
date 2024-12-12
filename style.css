@@ -9,7 +9,8 @@
 }
 
 body {
-    background-color:#EEEEEE ;
+    
+    background-color:#C4DAD2 ;
     font-family: "Poppins", sans-serif;
 }
 
@@ -119,12 +120,15 @@ p {
 
 /*  */
   
+
+
 a, 
 .btn{
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
+
 
 nav, .nav-links {
     display: flex;
@@ -379,6 +383,14 @@ section {
     height: 80vh;
 }
 
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .section__pic-container {
     padding-left: 2rem;
     display: flex;
@@ -404,6 +416,7 @@ section {
 }
 
 .section__text__p1 {
+    color: #9A7E6F;
     font-size: 1.25rem;
     text-align: center;
 }
@@ -574,7 +587,7 @@ section {
 .details-container {
     padding: 1rem;
     flex: 1;
-    background: white;
+    background: #E9EFEC;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -655,8 +668,8 @@ article .icon{
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background:rgb(250, 250, 250);
+    border-color: #C4DAD2;
+    background:#E9EFEC;
 }
 
 .project-img {
@@ -702,7 +715,7 @@ article .icon{
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: #E9EFEC;
     margin: 2rem auto;
     padding: 0.5rem;
 }
