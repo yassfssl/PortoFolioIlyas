@@ -94,6 +94,53 @@ p {
     height: auto;
     border-radius: 8px;
   }
+
+
+  .filtered-gallery {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 200px;
+    display: none;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .gallery-item.active {
+    display: block;
+  }
+  
   
 /* TRANSITION */
 
