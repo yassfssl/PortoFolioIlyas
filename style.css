@@ -23,6 +23,78 @@ p {
     color: rgb(85, 85, 85);
 }
 
+#maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Memastikan elemen dipusatkan di tengah layar */
+    text-align: center;
+  }
+  
+  .map-container {
+    width: 100%;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: black 10rem;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .h1-maps {
+    font-size: 2.5rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #333; 
+  }
+
+  .search-bar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .details-container.highlight {
+    background-color: rgba(255, 0, 0, 0.3); /* Merah transparan saat ditemukan */
+  }
+  
+  .details-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
 /* TRANSITION */
 
 .btn-2, .btn-1{

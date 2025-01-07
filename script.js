@@ -41,3 +41,54 @@ function moveSlide(direction) {
     // Move the slides container
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+
+  // Fungsi untuk mencari sertifikat berdasarkan input
+  function searchCertificates() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const slides = document.querySelectorAll('.slide');
+    
+    slides.forEach(slide => {
+        const title = slide.getAttribute('data-title').toLowerCase();
+        if (title.includes(input)) {
+            slide.style.display = ''; // Tampilkan slide yang cocok
+        } else {
+            slide.style.display = 'none'; // Sembunyikan slide yang tidak cocok
+        }
+    });
+  }
+
+  // Fungsi untuk mengatur pergerakan slide
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const allSlides = document.querySelectorAll('.slide');
+    let currentSlideIndex = Array.from(allSlides).findIndex(slide => slide.style.display !== 'none');
+    currentSlideIndex += direction;
+    
+    if (currentSlideIndex < 0) {
+        currentSlideIndex = allSlides.length - 1;
+    } else if (currentSlideIndex >= allSlides.length) {
+        currentSlideIndex = 0;
+    }
+
+    // Menampilkan slide sesuai indeks
+    for (let i = 0; i < allSlides.length; i++) {
+        allSlides[i].style.display = (i === currentSlideIndex) ? '' : 'none';
+    }
+  }
+
+
+  function searchProjects() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const projects = document.querySelectorAll('.details-container');
+  
+    projects.forEach(project => {
+      const title = project.querySelector('.project-title').textContent.toLowerCase();
+      if (title.includes(query)) {
+        project.classList.add('highlight'); // Menambahkan kelas highlight pada proyek yang ditemukan
+      } else {
+        project.classList.remove('highlight'); // Menghapus highlight jika tidak ditemukan
+      }
+    });
+  }
+  
